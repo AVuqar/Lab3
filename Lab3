@@ -1,0 +1,11 @@
+import math
+x = 0.1
+epsilon = 0.01
+S = 1
+term = x 
+n = 1 
+while abs(term) >= epsilon:
+    S += term
+    n += 1
+    term = (x ** n) / math.factorial(n)  
+print(f"Sum of series with ε={epsilon} and x={x} is approximately {S}")
